@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js",
+    "cluster": "MODO='cluster' nodemon server.js",
+    "fork": "MODO='fork' nodemon server.js",
+    "myPort": "PORT=4000 MODO='fork' nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/SantiagoVaccarelli/Desafio-pm2/issues"
   },
-  "homepage": "https://github.com/SantiagoVaccarelli/Desafio-pm2#readme"
+  "homepage": "https://github.com/SantiagoVaccarelli/Desafio-pm2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
