@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { fork } from "child_process";
-import os from "os"; // es propia de node para obtener informacion del sistema
+import os from "os";
 const nroCPUs = os.cpus().length;
 const router = Router();
 
@@ -11,7 +11,7 @@ const info = {
   "ID del proceso": process.pid,
   "Uso de la memoria": process.memoryUsage(),
   "Memoria total reservada (rss)": process.memoryUsage().rss,
-  "path de ejecución": process.execPath, //donde está el ejecutable de node
+  "path de ejecución": process.execPath,
   "Argumentos de entrada": process.argv,
   CPUs: nroCPUs,
 };

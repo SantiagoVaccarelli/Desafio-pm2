@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/SantiagoVaccarelli/Desafio-pm2/issues"
   },
-  "homepage": "https://github.com/SantiagoVaccarelli/Desafio-pm2#readme",
   "dependencies": {
     "express": "^4.18.1",
     "nodemon": "^2.0.19"

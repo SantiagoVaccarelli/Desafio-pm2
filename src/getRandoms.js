@@ -15,7 +15,7 @@ function getRandom(cant) {
   for (let i = 0; i < cant; i++) {
     numeros.push(Math.floor(Math.random() * 1000) + 1);
   }
-  //contar cuantas veces salió cada numero
+  
   const contador = numeros.reduce((acc, num) => {
     acc[num] = (acc[num] || 0) + 1;
     return acc;
