@@ -16,6 +16,10 @@ const info = {
   CPUs: nroCPUs,
 };
 
+router.get("/", (req, res) => {
+  res.redirect("/info");
+});
+
 router.get("/info", (req, res) => {
   res.send(info);
 });
