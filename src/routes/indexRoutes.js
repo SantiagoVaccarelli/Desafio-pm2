@@ -17,6 +17,7 @@ const info = {
 };
 
 router.get("/", (req, res) => {
+  res.send(info);
   res.redirect("/info");
 });
 
